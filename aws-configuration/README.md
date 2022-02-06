@@ -1,6 +1,8 @@
 #Update the policy statement
 Update policy statement to replace the correct aws region and account id. You can also change the secret path prefix as per requirement.
 
+```
+
 # Create new policy
 aws iam create-policy --policy-name argocd-awssecrets-policy --policy-document file://argocd-vault-plugin-policy.json
 
@@ -17,3 +19,5 @@ aws iam attach-user-policy --user-name argocd-aws-secrets-user --policy-arn <POL
 
 # Create sample secret
 aws secretsmanager create-secret --name sample/sec1 --secret-string "{\"secretkey\":\"MySecret\"}"
+
+```
