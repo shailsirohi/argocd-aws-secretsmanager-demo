@@ -1,7 +1,6 @@
-#Update the policy statement<br>
-Update policy statement to replace the correct aws region and account id. You can also change the secret path prefix as per requirement.<br>
-
 ```
+#Update the policy statement
+Update policy statement to replace the correct aws region and account id. You can also change the secret path prefix as per requirement.
 
 # Create new policy
 aws iam create-policy --policy-name argocd-awssecrets-policy --policy-document file://argocd-vault-plugin-policy.json
