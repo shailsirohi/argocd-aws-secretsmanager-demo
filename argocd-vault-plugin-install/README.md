@@ -1,7 +1,7 @@
 # Volume mount plugin to argocd repo server
 kubectl apply -f argo-repo-server/yaml -n argocd
 
-#Update the argocd-cm configmap
+# Update the argocd-cm configmap
 kubectl patch configmap argocd-cm --patch-file argocd-cm-patch.yaml -n argocd
 
 # Create role with access to secret
